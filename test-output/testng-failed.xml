@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="nameofBrowser" value="chrome"/>
+  <test thread-count="5" name="Testing on chrome(failed)">
+    <classes>
+      <class name="Practice.project1.LogintoApplication">
+        <methods>
+          <include name="withvalidcredentials"/>
+          <include name="quitbrowser"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- Practice.project1.LogintoApplication -->
+    </classes>
+  </test> <!-- Testing on chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

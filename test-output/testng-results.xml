@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="3" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Username entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Username entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Password entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Password entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[LoginButton Clicked successfully]]>
+    </line>
+    <line>
+      <![CDATA[Username entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Password entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[LoginButton Clicked successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-22T17:12:18 IST" name="Suite" finished-at="2026-10-22T17:12:28 IST" duration-ms="9924">
+    <groups>
+    </groups>
+    <test started-at="2026-10-22T17:12:18 IST" name="Testing on edge" finished-at="2026-10-22T17:12:26 IST" duration-ms="7094">
+      <class name="Practice.project1.LogintoApplication">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Practice.project1.LogintoApplication@50b5ac82]" started-at="2026-10-22T17:12:18 IST" name="launchbrowser" finished-at="2026-10-22T17:12:22 IST" duration-ms="3215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="withvalidcredentials()[pri:0, instance:Practice.project1.LogintoApplication@50b5ac82]" started-at="2026-10-22T17:12:22 IST" name="withvalidcredentials" finished-at="2026-10-22T17:12:23 IST" duration-ms="1027" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Username entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[Password entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[LoginButton Clicked successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- withvalidcredentials -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Practice.project1.LogintoApplication@50b5ac82]" started-at="2026-10-22T17:12:24 IST" name="quitbrowser" finished-at="2026-10-22T17:12:26 IST" duration-ms="1610" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2d6d5a70-0a84-4f00-9394-2d21ae48e440, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 153.0.3, moz:accessibilityChecks: false, moz:buildID: 20260803132010, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19520, moz:profile: C:\Users\PRAHAL~1.PER\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2d6d5a70-0a84-4f00-9394-2d21ae48e440]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2d6d5a70-0a84-4f00-9394-2d21ae48e440, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 153.0.3, moz:accessibilityChecks: false, moz:buildID: 20260803132010, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19520, moz:profile: C:\Users\PRAHAL~1.PER\AppDa..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2d6d5a70-0a84-4f00-9394-2d21ae48e440
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:735)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:739)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:526)
+at utility.BaseTest.quitbrowser(BaseTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+      </class> <!-- Practice.project1.LogintoApplication -->
+    </test> <!-- Testing on edge -->
+    <test started-at="2026-10-22T17:12:18 IST" name="Testing on chrome" finished-at="2026-10-22T17:12:28 IST" duration-ms="9924">
+      <class name="Practice.project1.LogintoApplication">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Practice.project1.LogintoApplication@61d6015a]" started-at="2026-10-22T17:12:18 IST" name="launchbrowser" finished-at="2026-10-22T17:12:22 IST" duration-ms="3618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method retried="true" signature="withvalidcredentials()[pri:0, instance:Practice.project1.LogintoApplication@61d6015a]" started-at="2026-10-22T17:12:22 IST" name="withvalidcredentials" finished-at="2026-10-22T17:12:24 IST" duration-ms="1730" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="mdc-button__label">...</span> is not clickable at point (622, 337). Other element would receive the click: <mat-card-content class="mat-mdc-card-content">...</mat-card-content>
+  (Session info: chrome=155.0.8059.86)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3acbf26b0b501bbc5881288601490fb, clickElement {id=f.B60FEEDE1A1647E35EA9723CC09D4B95.d.D656BD78BDA31560690E9AB0400B64D1.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\PRAHAL~1.PER\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51005}, goog:processID: 19540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51005/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c3acbf26b0b501bbc5881288601490fb)] -> xpath: //span[text()='Submit']]
+Session ID: c3acbf26b0b501bbc5881288601490fb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="mdc-button__label">...</span> is not clickable at point (622, 337). Other element would receive the click: <mat-card-content class="mat-mdc-card-content">...</mat-card-content>
+  (Session info: chrome=155.0.8059.86)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c3acbf26b0b501bbc5881288601490fb, clickElement {id=f.B60FEEDE1A1647E35EA9723CC09D4B95.d.D656BD78BDA31560690E9AB0400B64D1.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\PRAHAL~1.PER\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51005}, goog:processID: 19540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51005/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c3acbf26b0b501bbc5881288601490fb)] -> xpath: //span[text()='Submit']]
+Session ID: c3acbf26b0b501bbc5881288601490fb
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at Practice.project1.LoginPage.ClickOnLoginButton(LoginPage.java:31)
+at Practice.project1.LogintoApplication.withvalidcredentials(LogintoApplication.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Username entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[Password entered successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- withvalidcredentials -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Practice.project1.LogintoApplication@61d6015a]" started-at="2026-10-22T17:12:24 IST" name="quitbrowser" finished-at="2026-10-22T17:12:26 IST" duration-ms="1688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Practice.project1.LogintoApplication@61d6015a]" started-at="2026-10-22T17:12:26 IST" name="launchbrowser" finished-at="2026-10-22T17:12:28 IST" duration-ms="2388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="withvalidcredentials()[pri:0, instance:Practice.project1.LogintoApplication@61d6015a]" started-at="2026-10-22T17:12:28 IST" name="withvalidcredentials" finished-at="2026-10-22T17:12:28 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Username entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[Password entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[LoginButton Clicked successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- withvalidcredentials -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:Practice.project1.LogintoApplication@61d6015a]" started-at="2026-10-22T17:12:28 IST" name="quitbrowser" finished-at="2026-10-22T17:12:28 IST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+      </class> <!-- Practice.project1.LogintoApplication -->
+    </test> <!-- Testing on chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
