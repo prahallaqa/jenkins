@@ -12,7 +12,20 @@ public class LogintoApplication extends BaseTest {
 	@Test(retryAnalyzer = RetryLogic.class)
 	public void withvalidcredentials() {
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.EnterValidUsername();
+
+		WebDriverWait wait =
+    new WebDriverWait(driver, Duration.ofSeconds(20));
+
+WebElement loginId = wait.until(
+    ExpectedConditions.visibilityOfElementLocated(
+        By.name("LoginId")
+    )
+);
+
+loginId.sendKeys(username);
+
+		
+		//loginpage.EnterValidUsername();
 		Reporter.log("Username entered successfully");
 		loginpage.EnterValidPassword();
 		Reporter.log("Password entered successfully");
